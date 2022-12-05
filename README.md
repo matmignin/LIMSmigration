@@ -2,6 +2,15 @@
 data migration and clean up from one database to another
 ## 
 
+```
+spec_chars = ["!",'"',"#","%","&","'","(",")",
+              "*","+",",","-",".","/",":",";","<",
+              "=",">","?","@","[","\\","]","^","_",
+              "`","{","|","}","~","–"]
+for char in spec_chars:
+    df['column2'] = df['column2'].str.replace(char, ' ')
+````
+
 %_
 
 *certifi* >> COA
